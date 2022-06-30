@@ -1,0 +1,336 @@
+html {
+	font-size: 16px;
+}
+/*This first part is for the static and faded image that is our background image*/
+#front, #back {
+	position: absolute;
+	width: 100vw;
+}
+			
+#back {
+	min-height: 500vh;
+	z-index: 1;
+}
+			
+#front {
+	z-index: 2;
+}
+			
+#back {
+	background-image: url('body1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+header {
+	border: 2px solid black;
+	height: 30%;
+	background-color: orange;
+	text-align: center;
+	color: black;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+header > p {
+	color: white;
+	font-size: 20px;
+}
+
+header > a {
+	color: white
+	text-align: right;
+}
+
+nav{
+	color: black;
+	font-size: 2em;
+	position: float;
+	text-align: center;
+}
+
+#aboutUs {
+	position: relative;
+	background-color: #90BCF5;
+	margin: 3rem;
+	padding: 3rem;
+	float: right;
+	text-align: center;
+	border: 1px solid black;
+	width: 50%;
+}
+
+#aboutUs h2 {
+	font-size: 2.5rem;
+}
+
+#aboutUs p {
+	font-size: 1.5rem;
+}
+
+#exerciseSelect {
+	padding: 2em;
+}
+
+#exerciseSelect img {
+	padding: 0.5em;
+}
+
+#exerciseSelect > h2 {
+	font-size: 3rem;
+	color: blue;
+	text-align: center;
+}
+
+.image {
+	width: 300px;
+	position: relative;
+}
+
+.image-img {
+	display: block;
+	width: 100%;
+}
+
+.image-cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: "montserrat", sans-serif;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.image-overlay {
+	background: #009578;
+}
+
+.image-cover:hover {
+	opacity: 1;
+}
+
+.image-cover > * {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image-cover:hover > * {
+	transform: translateY(0);
+}
+
+.image-title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#form {
+	color: black;
+	background-color: #0BEFF6;
+	float: center;
+	width: 100%;
+	border: 1px solid black;
+	font-size: 2rem;
+}	
+
+#form h2 {
+	text-align: center;
+}
+
+
+fieldset > img {
+	height: 7em;
+	width: 11em;
+	float: right;
+}
+
+fieldset * {
+	font-size: 2rem;
+} 
+
+input[type=submit] {
+	background-color: #04AA6D;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 50%;
+}
+
+#button {
+	background-color: #04AA6D;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 50%;
+}
+
+#contact {
+	background-color: #00cc99;
+	color: black;
+	font-size: 2em;
+	border: 1px solid black;
+	width: 50%;
+	float: absolute;
+}
+
+#map > h2 {
+	border: 1px solid black;
+	background-color: #ff99ff;
+	font-size: 3rem;
+	text-align: center;
+	color: black;
+	margin: 0;
+	padding:0;
+}
+
+footer {
+	background-color: orange;
+	padding: 1em;
+	text-align: center;
+	color: black;
+	height: 30%;
+	border: 2px solid black;
+}
+
+footer > span {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+footer > a {
+	padding: 0 2rem;
+	font-size: 2rem;
+}
+
+
+
+#pageTitle {
+	font-size: 2.5rem;
+	color: #0000ff;
+	text-align: center;
+}
+
+#warm-up {
+	border: 2px solid black;
+	background-color: #b3ccff;
+	color: black;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 500;
+	width: 15em;
+	float: left;
+}
+
+#warm-up li {
+	list-style-type: none;
+}
+
+#exercise {
+	border: 2px solid black;
+	background-color: #b3ffff;
+	color: black;
+	width: 70%;
+	font-size: 20px;
+	float: right;
+	padding: 2rem;
+	margin: 0em 4em;
+}
+
+#exercise h3 {
+	text-align: center;
+	font-size: xxx-large;
+}
+
+#exercise li {
+	font-size: larger;
+}
+
+div > img {
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 5em;
+	width: 25em;
+	height: 25em;
+	
+	
+}
+
+.vid {
+	margin: 10rem 0rem 0 0;
+}
+/* media queries */
+
+@media screen and (max-width: 1052px) {
+	#contact {
+		width: 100%;
+		background-color: #4ddbff;
+		color: black;
+		
+	}
+	
+	#contact h2 {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 805px) {
+	fieldset > img {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 997px) {
+	#warm-up {
+		width: 100%;
+		position: center;
+		
+	}
+	
+	div > img {
+		display: none;
+	}
+	
+	#exercise {
+		width: 100%;
+		position: center;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#footer > a {
+		text-align: center;
+		font-size: 2rem;
+		width: 100%;
+		font-weight: 900;
+		letter-spacing: 2px;
+	}
+	
+	#footer > span {
+		display: none;
+	}
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Beginners Body Building</title>
+		<link href="style-BBB.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	<div id="back"></div> <!-- This div is for the background image and we have 
+											faded it to overlap other images and text -->
+	<div id="front">
+		
+		<header id="home">	<!-- The header section of the website. -->
+				<h1>Beginners Body Building</h1>
+				<p>getting the perfect body that you dream about!</p>
+			
+		</header>
+		
+			<nav> <!-- The navigation section with page links to sections. -->
+				<a href="#home" aria-label="Go to top of the page.">Home</a>
+				&nbsp
+				<a href="#exer" aria-label="Go to the weights choice part.">select your exercise</a>
+				&nbsp
+				<a href="#club" aria-label="Go to the registration form.">Join the Club</a>
+				&nbsp
+				<a href="#map" aria-label="Go to the map of the recommended gym.">Find the best gym</a>
+				&nbsp
+				<a href="#contactUs" aria-label="Go to the get in touch section and ask questions or queries." >Contact US</a>
+			</nav>
+			
+		<aside id="aboutUs">	
+			<div>	<!-- This portion explains what the web page's mission is, so its unrelated information that is not critical to the entire understanding of the projects meaning -->
+				<h2>About Out Mission</h2>
+				<p>
+					Our mission is to start you off on your incredible journey of building the body you 
+					want and to be proud of it, this site will give you exercise techniques and tips 
+					so that you can get the most out of your training.  
+					We will show you how to lift the weights correctly and how to do a correct set 
+					of one exercise to fully use the muscle and to put the tension so that you are 
+					tearing and stretching the muscle to increase growth and strength.
+				</p>
+			</div>
+		</aside>
+		
+		<br>
+		
+		<div id="exer">
+		<section id="exerciseSelect" >
+			<h2>Select your exercise from the images</h2>
+			<div class="image">
+				<a href="Dum-Bell.html" target="_blank">
+				<img class="image-img" src="Dum-Bell.jpg" alt="Link to the dum-bell exercise webpage for users">
+				<div class="image-cover image-overlay">
+					<div class="image-title">Dum-Bell</div>
+				</div>
+				</a>
+			</div>
+			
+			<div class="image">
+				<a href="" target="_blank">
+				<img class="image-img" src="kettelbell1.jpg" alt="link to the kettel bell exercise webpage for users">
+				<div class="image-cover image-overlay">
+				<div class="image-title">Kettle Bell</div>
+				</div>
+				</a>
+			</div>
+			
+			<div class="image">
+				<a href="" target="_blank">
+				<img class="image-img" src="bands.jpg" alt="Link to the Resistance bands exercise webpage for users">
+				<div class="image-cover image-overlay">
+				<div class="image-title">Resistant Bands</div>
+				</div>
+				</a>
+			</div>
+		</div>	
+		</section>
+		
+		<section id="form">
+			<h2 id="club">Fill in your details to Join our club and receive promotions!</h2>
+			 <!-- This form has required field to complete and its going to post the information to the code institute form dump -->
+			<form action="https://formdump.codeinstitute.net" method="POST" >
+				<fieldset>
+					<legend>Join our Club</legend>
+					<img src="body4.jpg" alt="person preforming a evening run to keep fit picture.">
+					<div>
+						<label for="name-field">Name</label>
+						<input id="name-field" name="full_name" placeholder="Your name" type="text" required />
+					</div>
+					
+					<div>
+						<label for="email-field">Email</label>
+						<input id="email-field" name="email" placeholder="Your email" type="email" required />
+					</div>
+					<br>
+						<legend><h3>Information About your Exercise Habits</h3></legend>
+						
+						<label for="goal">Whats your personal Goal?</label>
+						<input list="personal-goal" id="goal" name="goal" type="text" required />
+						
+					<datalist id="personal-goal">
+						<option value="Build-Muscle"></option>
+						<option value="Improve-Stamina"></option>
+						<option value="Lose-Body-Weight"></option>
+						<option value="Build-Strength"></option>
+					</datalist>
+					<br>
+					
+						<label for="weights">Whats your favourite Exercise?</label>
+						<input list="fav-exercise" id="weights" name="fav-exercise" type="text" required />
+						
+					<datalist id="fav-exercise">
+						<option value="Dum-Bell-curl"></option>
+						<option value="Dum-Bell-press"></option>
+						<option value="Dum-Bell-flies"></option>
+						<option value="Dum-Bell-kickback"></option>
+						<option value="Dum-Bell-deadlift"></option>
+						<option value="Dum-Bell-RDL's"></option>
+						<option value="Kettle-Bell-swing"></option>
+						<option value="Kettle-Bell-shoulderpress"></option>
+						<option value="Kettle-Bell-squats"></option>
+					</datalist>
+					
+				</fieldset>
+				<fieldset>
+					<p>How would you describe your fitness level?</p>
+					
+					<input id="extreme-beginner-radio" name="fitness-level" value="extreme-beginner" type="radio" required >
+					<label for="extreme-beginner-radio">Extreme Beginner</label>
+					
+					<input id="beginner-radio" name="fitness-level" value="beginner" type="radio" >
+					<label for="beginner-radio">Beginner</label>
+					
+					<input id="Intermediate-radio" name="fitness-level" value="intermediate" type="radio" >
+					<label for="Intermediate-radio">Intermediate</label>
+					
+					<input id="advanced-radio" name="fitness-level" value="advanced" type="radio">
+					<label for="advanced-radio">Advanced</label>
+					
+					<br>
+					<p>What is your age range? &nbsp 
+					<label for="age">Age</label>
+					<select id="age" name="age">
+						<option value="select your age range under-20" required >Under 20</option>
+						<option value="20s">20-29</option>
+						<option value="30s">30-39</option>
+						<option value="40s">40-49</option>
+						<option value="50s">50-59</option>
+						<option value="60+">60+</option>
+					</select>
+					</p>
+					
+					<p>How would you describe your body type?</P>
+					
+					<input id="obese" name="body-type" value="obese" type="radio" required >
+					<label for="obese">Obese</label>
+					
+					<input id="overweight" name="body-type" value="overweight" type="radio" >
+					<label for="overweight">Overweight</label>
+					
+					<input id="average" name="body-type" value="average" type="radio" >
+					<label for="average">Average</label>
+					
+					<input id="fit" name="body-type" value="fit" type="radio" >
+					<label for="fit">Fit</label>
+					
+					<input id="athletic" name="body-type" value="athletic" type="radio" >
+					<label for="athletic">Athletic</label>
+					
+					<p>Where would you find most comfortable to exercise?</p>
+					
+					<input id="gym-exercise" name="location-exercise" value="gym" type="radio" required >
+					<label for="gym-exercise">In the Gym</label>
+					
+					<input id="home-exercise" name="location-exercise" value="home" type="radio" >
+					<label for="home-exercise">At Home</label>
+					
+					<input id="public-area-exercise" name="location-exercise" value="public-area" type="radio" >
+					<label for="public-area-exercise">In a Public area gym</label>
+					
+					<input id="garden-exercise" name="location-exercise" value="back-garden" type="radio" >
+					<label for="garden-exercise">In the Back Garden</label>
+					
+					<input id="group-exercise" name="location-exercise" value="group-exercise" type="radio" >
+					<label for="group-exercise">A Group Exercise</label>
+					
+					<p>When in your day is the best time to exercise? &nbsp
+					<label for="time">Time</label>
+					<select id="time" name="time">
+						<option value="select your faverate time 07:00-09:00" required >7am</option>
+						<option value="09:00-11:00">9am</option>
+						<option value="11:00-13:00">11am</option>
+						<option value="13:00-15:00">1pm</option>
+						<option value="15:00-17:00">3pm</option>
+						<option value="17:00-20:00">5pm</option>
+						<option value="20:00-22:00">8pm</option>
+						<option value="22:00-00:00">10pm</option>
+						<option value="overnight">overnight</option>
+					</select>
+					</p>
+					
+				<input type="submit" value="Enter customer details" />
+				<input id="button" value="Reset" type="reset" />	
+				</fieldset>
+				
+			</form>
+		</section>
+		
+		<section id="contactUs">
+			<div id="contact">
+				<h2>Contact Us and ask questions</h2>
+				<table>
+					<tr>
+						<th>Instructor Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+						
+						<th>Contact Number</th>
+					</tr>
+					
+					<tr>
+						<td>Graham</td>
+						<td aria-label="Graham's contact number!">0123 458712</td>
+					</tr>
+					<tr>
+						<td>Peter</td>
+						<td aria-label="Peters contact number!">0352 464646</td>
+					</tr>
+					<tr>
+						<td>John</td>
+						<td aria-label="John's contact number">0185 485269</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		
+		<section id="map">
+			<h2>This map shows you to the best place to workout, the Anytime Fitness gym in Newbury is the best!</h2> 
+			<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=anytime%20newbury&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					
+		</section>
+		
+		<footer>
+			<span>Find us on:</span>
+			
+			<a href="https://www.facebook.com" target="_blank" rel"" 
+				aria-label="Find us on Facebook (Link opens in a new tab)">Facebook</a>
+			<a href="https://www.twitter.com" target="_blank" rel="" 
+				aria-label="Find us on Twitter (Link opens in a new tab)">Twitter</a>
+			<a href="https://www.instagram.com" target="_blank" rel=""
+				aria-label="Find us on Instagram (Link opens in a new tab)">Instagram</a>
+				
+			<p>Copyright &#169; Beginners Body Building</p>
+		</footer>
+	</div>
+	</body>
+</html>

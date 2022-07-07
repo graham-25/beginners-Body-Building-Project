@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Beginners Body Building</title>
-		<link href="style-BBB.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style-BBB.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 	<div id="back"></div> <!-- This div is for the background image and we have 
@@ -44,31 +44,31 @@
 		</aside>
 		
 		<br>
-		
+		<!-- The exercise section is going to have interactive images to be eye catching for the user-->
 		<div id="exer">
 		<section id="exerciseSelect" >
 			<h2>Select your exercise from the images</h2>
-			<div class="image">
+			<div class="image">		<!-- This is the Dum-Bell image selection-->
 				<a href="Dum-Bell.html" target="_blank">
-				<img class="image-img" src="Dum-Bell.jpg" alt="Link to the dum-bell exercise webpage for users">
+				<img class="image-img" src="assets/images/Dum-Bell.jpg" alt="Link to the dum-bell exercise webpage for users">
 				<div class="image-cover image-overlay">
 					<div class="image-title">Dum-Bell</div>
 				</div>
 				</a>
 			</div>
 			
-			<div class="image">
+			<div class="image"> <!-- The kettle bell image selection, not working for future development-->
 				<a href="" target="_blank">
-				<img class="image-img" src="kettelbell1.jpg" alt="link to the kettel bell exercise webpage for users">
+				<img class="image-img" src="assets/images/kettelbell1.jpg" alt="link to the kettel bell exercise webpage for users">
 				<div class="image-cover image-overlay">
 				<div class="image-title">Kettle Bell</div>
 				</div>
 				</a>
 			</div>
 			
-			<div class="image">
+			<div class="image"> <!-- The Resistant bands image selection, not working for future development-->
 				<a href="" target="_blank">
-				<img class="image-img" src="bands.jpg" alt="Link to the Resistance bands exercise webpage for users">
+				<img class="image-img" src="assets/images/bands.jpg" alt="Link to the Resistance bands exercise webpage for users">
 				<div class="image-cover image-overlay">
 				<div class="image-title">Resistant Bands</div>
 				</div>
@@ -83,12 +83,12 @@
 			<form action="https://formdump.codeinstitute.net" method="POST" >
 				<fieldset>
 					<legend>Join our Club</legend>
-					<img src="body4.jpg" alt="person preforming a evening run to keep fit picture.">
+					<img src="assets/images/body4.jpg" alt="person preforming a evening run to keep fit picture.">
 					<div>
 						<label for="name-field">Name</label>
 						<input id="name-field" name="full_name" placeholder="Your name" type="text" required />
 					</div>
-					
+						<!-- Basic personal information, name and e-mail address. Some information gathering-->
 					<div>
 						<label for="email-field">Email</label>
 						<input id="email-field" name="email" placeholder="Your email" type="email" required />
@@ -99,7 +99,7 @@
 						<label for="goal">Whats your personal Goal?</label>
 						<input list="personal-goal" id="goal" name="goal" type="text" required />
 						
-					<datalist id="personal-goal">
+					<datalist id="personal-goal"> <!--What the user hopes to achieve-->
 						<option value="Build-Muscle"></option>
 						<option value="Improve-Stamina"></option>
 						<option value="Lose-Body-Weight"></option>
@@ -123,7 +123,7 @@
 					</datalist>
 					
 				</fieldset>
-				<fieldset>
+				<fieldset> <!--What if any are the users exercise habbits or rutines-->
 					<p>How would you describe your fitness level?</p>
 					
 					<input id="extreme-beginner-radio" name="fitness-level" value="extreme-beginner" type="radio" required >
@@ -199,7 +199,7 @@
 						<option value="overnight">overnight</option>
 					</select>
 					</p>
-					
+				<!--Submit button that uses a form dump and works-->	
 				<input type="submit" value="Enter customer details" />
 				<input id="button" value="Reset" type="reset" />	
 				</fieldset>
@@ -211,7 +211,7 @@
 			<div id="contact">
 				<h2>Contact Us and ask questions</h2>
 				<table>
-					<tr>
+					<tr> <!--Contact information-->
 						<th>Instructor Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
 						
 						<th>Contact Number</th>
@@ -239,7 +239,7 @@
 					
 		</section>
 		
-		<footer>
+		<footer>	<!--Social media links and copy right information-->
 			<span>Find us on:</span>
 			
 			<a href="https://www.facebook.com" target="_blank" rel"" 

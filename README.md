@@ -1,5 +1,7 @@
 # beginners-Body-Building-Project
 My first project for my portfolio HTML/CSS
+Link to project: https://graham-25.github.io/beginners-Body-Building-Project/Home.html
+
 Project proposal
 Beginners Body Building Club website.
 Purpose:

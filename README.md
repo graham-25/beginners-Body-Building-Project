@@ -58,7 +58,53 @@ Skeleton,jpg
 
 
 
+
+<h2>Features.</h2>
+<hr>
+<h3>Selecting your exercise</h3>
+<p>The user can hover over one of the images and text will apear to name what the piece of exercise equipment it is, only the Dum-Bell image works for demonstration purpose but the other 2 images can have additional webpages in the future for site improvement. When the user selects the Dum-Bell image they are taken to the secound page to see how to do a simple exercise correctly.</p>
+
+![image](https://user-images.githubusercontent.com/106487436/178763417-9c183cdf-4580-4103-b593-92ca2fd12649.png)
+
+![image](https://user-images.githubusercontent.com/106487436/178767309-9fe8aafb-be7d-4773-bf4f-9f5c8a5e54ca.png)
+
+<p>I have also inserted a YouTube video underneath the method section as to reinforce the method of how to correctly do a Bicep-curl</p> 
 Resources
 Images from Shutterstock licence purchased
 Video link to (https://www.youtube.com/watch?v=XE_pHwbst04) YouTube open source about correctly lifting the dum-bell.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
